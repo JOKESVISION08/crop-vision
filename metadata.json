@@ -1,0 +1,6 @@
+{
+  "name": "CropGPT + CropVision AI",
+  "description": "Intelligent Crop Disease & Pest Monitoring Platform with Gemini AI, RAG knowledge engine, historical comparison, and farmer mobile assistant.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
