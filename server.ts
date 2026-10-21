@@ -561,13 +561,11 @@ if (isProduction) {
   app.use(vite.middlewares);
 }
 
-if (!process.env.NETLIFY && process.env.NODE_ENV !== 'production' || !process.env.AWS_LAMBDA_FUNCTION_VERSION) {
+if (!process.env.NETLIFY) {
   const PORT = Number(process.env.PORT) || 3000;
-  if (!process.env.NETLIFY) {
-    app.listen(PORT, '0.0.0.0', () => {
-      console.log(`Server running on http://localhost:${PORT}`);
-    });
-  }
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
 }
 
 export default app;
